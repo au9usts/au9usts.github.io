@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Tab</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="search-container">
+        <form class="search-bar" action="https://google.com/" method="GET" >
+          <input autofocus type="search" name="q" placeholder="search" autocomplete="off">
+        </form>
+        <div class="container">
+          <div class="left-container">
+            <div class="gif">
+                <img src="https://i.ibb.co/3TP4CJt/cosy.png">
+            </div>
+          </div>
+      
+          <div class="right-container">
+            <div class="bookmarks">
+              <div class="category">
+                <div class="links">
+                  <li class="title">socials</li>
+                  <li><a href="https://youtube.com/">youtube</a></li>
+                  <li><a href="https://x.com/">twitter</a></li>
+                  <li><a href="https://twitch.tv/">twitch</a></li>
+                  <li><a href="https://instagram.com/">insta</a></li>
+                </div>
+              </div>
+
+              <div class="category">
+                <div class="links">
+                  <li class="title">nexus</li>
+                  <li><a href="https://10.195.20.11:32400/">plex</a></li>
+                  <li><a href="https://10.195.20.11:8989/">sonarr</a></li>
+                  <li><a href="https://10.195.20.11:7878">radarr</a></li>
+                  <li><a href="https://10.195.20.11:5030/">slskd</a></li>
+                </div>
+              </div>
+
+              <div class="category">
+                <div class="links">
+                  <li class="title"><a style="color: #EADBB2" href="https://reddit.com">reddit</a></li>
+                  <li><a href="https://reddit.com/r/singapore/">sg</a></li>
+                  <li><a href="https://reddit.com/r/kpop/">kpop</a></li>
+                  <li><a href="https://reddit.com/r/northernlion/">nl</a></li>
+                  <li><a href="https://reddit.com/r/marvelstudiosspoilers/">mss</a></li>
+                </div>
+              </div>
+
+              <div class="category">
+                <div class="links">
+                  <li class="title">misc.</li>
+                  <li><a href="https://mail.google.com/mail/">gmail</a></li>
+                  <li><a href="https://web.telegram.org/">teleg</a></li>  
+                  <li><a href="https://shopee.sg/">shopee</a></li>
+                  <li><a href="https://www.google.com/maps/">map</a></li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="todo-container">
+          <div name="todo-list">
+            <form class="list-bar" id="form-box">
+                <input type="text" id="input-box" placeholder="enter new tasks" autocomplete="off"/>
+                <button hidden onclick="addTask()"></button>
+            </form>
+            <ul id="list-container">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>

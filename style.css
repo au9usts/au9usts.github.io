@@ -1,0 +1,208 @@
+html, body {
+    align-items: center;
+    background: #282828;
+    font: 22px "SpaceMono Nerd Font", monospace;
+    height: 100%;
+	display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-bar {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+  background-color: unset;
+  color: #8F9191;
+  min-width: 900px;
+  border: 2px solid #313131;
+  border-top-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  width: 50%;
+  padding: 5px;
+  outline: 0;
+  text-align: center;
+  font-family: "SpaceMono Nerd Font", monospace;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+:-moz-placeholder {
+  text-align: center;
+}
+::-moz-placeholder {
+  text-align: center;
+}
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    grid-column: 1 / -1;
+    margin: 0; 
+    text-align: center;
+    color: #8F9191;
+}
+
+a {
+    color: #668F8B;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: #FA7921;
+}
+
+.gif img {
+    border: 2px solid #313131;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 100%;
+    width: 8em;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 150px 600px 1fr;
+  grid-template-areas:
+    ". left right .";
+  column-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.left-container {
+  grid-area: left;
+  aspect-ratio: 1/1;
+}
+
+.right-container {
+  grid-area: right;
+  width: 100%;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+
+.bookmarks {
+  display: flex;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #EADBB2;
+}
+
+.title {
+  font-size: 20px;
+}
+
+li {
+  font-size: 16px;
+  list-style-type: none;
+  padding: 5px
+}
+
+a:link {
+  text-decoration: none;
+  color: #8F9191;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+.list-bar {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.list-bar input {
+  background-color: unset;
+  color: #8F9191;
+  min-width: 900px;
+  border: 2px solid #313131;
+  border-bottom-style: hidden;
+  border-left-style: hidden;
+  border-right-style: hidden;
+  width: 50%;
+  padding: 5px;
+  outline: 0;
+  text-align: center;
+  font-family: "SpaceMono Nerd Font", monospace;
+}
+
+#list-container {
+    margin: 20px;
+}
+
+#new-item-input, #add-item-button {
+    min-width: 900px;
+    border-radius: 5px;
+    border: 2px solid #313131;
+    width: 50%;
+    padding: 5px;
+}
+
+#dynamic-list li {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #8F9191;
+    text-align: center;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li span {
+    position: absolute;
+    top: 2px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #EADBB2;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
