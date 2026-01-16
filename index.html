@@ -6,7 +6,7 @@
     </head>
     <body>
       <div class="search-container">
-        <form class="search-bar" action="https://google.com/" method="GET" >
+        <form class="search-bar" action="https://google.com/search" method="GET" >
           <input autofocus type="search" name="q" placeholder="search" autocomplete="off">
         </form>
         <div class="container">
@@ -17,7 +17,8 @@
           </div>
       
           <div class="right-container">
-            <div class="bookmarks">
+            <button type="button" class="collapse">> favorites</button>
+            <div class="bookmarks" style="display: flex">
               <div class="category">
                 <div class="links">
                   <li class="title">socials</li>
@@ -30,11 +31,11 @@
 
               <div class="category">
                 <div class="links">
-                  <li class="title">nexus</li>
-                  <li><a href="https://10.195.20.11:32400/">plex</a></li>
-                  <li><a href="http://10.195.20.11:8989/">sonarr</a></li>
-                  <li><a href="http://10.195.20.11:7878">radarr</a></li>
-                  <li><a href="https://10.195.20.11:5031/">slskd</a></li>
+                  <li class="title">geek</li>
+                  <li><a href="https://github.com/au9usts/">github</a></li>
+                  <li><a href="https://www.last.fm/user/affykins/">last.fm</a></li>
+                  <li><a href="https://cobalt.tools/">cobalt</a></li>
+                  <li><a href="https://genshin.gg/">genshin</a></li>
                 </div>
               </div>
 
@@ -53,10 +54,53 @@
                   <li class="title">misc.</li>
                   <li><a href="https://mail.google.com/mail/">gmail</a></li>
                   <li><a href="https://web.telegram.org/">teleg</a></li>  
-                  <li><a href="https://shopee.sg/">shopee</a></li>
+                  <li><a href="https://shopee.sg/">shopee</a>/<a href="https://lazada.sg/">lazada</a></li>
                   <li><a href="https://www.google.com/maps/">map</a></li>
                 </div>
               </div>
+            </div>
+              
+            <button type="button" class="collapse">> self-hosted</button>
+            <div class="bookmarks">
+              <div class="category">
+                <div class="links">
+                  <li class="title">prod</li>
+                  <li><a href="https://10.195.20.10/ui/#/login">exsi00</a></li>
+                  <li><a href="https://10.195.20.11:8989/">exsi01</a></li>
+                  <li><a href="https://10.195.20.11:7878">exsi02</a></li>
+                  <li><a href="https://10.195.20.11:9443/">portainer</a></li>
+                </div>
+              </div>
+
+              <div class="category">
+                <div class="links">
+                  <li class="title">media</a></li>
+                  <li><a href="http://10.195.20.11:8096/">jellyfin</a></li>
+                  <li><a href="https://10.195.20.11:8989/">sonarr</a></li>
+                  <li><a href="https://10.195.20.11:7878/">radarr</a></li>
+                  <li><a href="http://10.195.20.11:8080/">qbittorrent</a></li>
+                </div>
+              </div>
+
+              <div class="category">
+                <div class="links">
+                  <li class="title">miscs</li>
+                  <li><a href="http://10.195.20.12/">pterodactyl</a></li>
+                  <li><a href="https://10.195.20.11:444/login/">nextcloud</a></li>  
+                  <li><a href="http://10.195.20.11:4533/app/#/login/">navidrome</a></li>
+                  <li><a href="https://10.195.20.11:5030/">slskd</a></li>
+                </div>
+              </div>
+
+              <div class="category">
+                <div class="links">
+                  <li class="title">network</li>
+                  <li><a href="http://10.195.100.1:954/index.php/">pfsense</a></li>
+                  <li><a href="http://10.195.100.2/">switch</a></li>
+                  <li><a href="http://10.195.10.99/Main_Login.asp/">router</a></li>
+                </div>
+              </div>
+              
             </div>
           </div>
         </div>
