@@ -49,3 +49,24 @@ formElement.addEventListener('submit', function(event) {
     console.log("Input value on submit:", inputElement.value);
 });
 
+
+const buttons = document.querySelectorAll(".collapse");
+const contents = document.querySelectorAll(".bookmarks");
+
+buttons.forEach((btn, index) => {
+    btn.addEventListener("click", function() {
+        const targetContent = this.nextElementSibling;
+
+        // 2. Check if the clicked section is already open
+        const isOpen = targetContent.style.display === "flex";
+        
+        contents.forEach((nav) => {
+        nav.style.display = "none";
+
+        });
+
+        if (!isOpen) {
+            targetContent.style.display = "flex";
+        }
+    });
+  });
