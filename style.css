@@ -95,16 +95,28 @@ a:hover {
   width: 100%;
 }
 
+.collapse {
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: #282828;
+  font-size: 22px;
+  color: #EADBB2;
+  font-family: "SpaceMono Nerd Font", monospace;
+  text-align: left;
+  padding-left: 32px;
+  padding-bottom: -10px;
+}
+
 .category {
   display: flex;
   flex-direction: column;
   width: 180px;
 }
 
-
 .bookmarks {
-  display: flex;
-  justify-content: center;
+  display: none;
 }
 
 .links {
